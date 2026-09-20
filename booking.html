@@ -1,0 +1,192 @@
+<link rel="stylesheet" href="styles.min.css">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book a grooming appointment for your dog at Snazzy Paws Grooming">
+    <title>Booking | Snazzy Paws Grooming</title>
+    <link rel="stylesheet" href="styles.min.css">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <nav aria-label="Main navigation">
+            <div class="nav-container">
+                <a href="index.html" class="logo">Snazzy Paws Grooming</a>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+                <label for="nav-toggle" class="hamburger" aria-hidden="true">&#9776;</label>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="booking.html" aria-current="page">Booking</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="page-header" aria-labelledby="booking-heading">
+            <h1 id="booking-heading">Book an Appointment</h1>
+        </section>
+
+        <section class="booking-form-section" aria-labelledby="form-heading">
+            <h2 id="form-heading" class="visually-hidden">Booking Form</h2>
+            <form action="#" method="post" class="booking-form">
+                <fieldset>
+                    <legend>Booking Details</legend>
+
+                    <div class="form-group">
+                        <label for="service">Select Service:</label>
+                        <select id="service" name="service" required>
+                            <option value="">-- Please select --</option>
+                            <option value="bath-brush">Bath and Brush</option>
+                            <option value="haircut">Haircut</option>
+                            <option value="nail-trim">Nail Trim</option>
+                            <option value="full-grooming">Full Grooming Package</option>
+                            <option value="spa-package">Spa Package</option>
+                            <option value="puppy-package">Puppy Package</option>
+                            <option value="senior-package">Senior Dog Package</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date">Choose Date:</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="time">Choose Time:</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Dog Details</legend>
+
+                    <div class="form-group">
+                        <label for="dog-name">Dog's Name:</label>
+                        <input type="text" id="dog-name" name="dog-name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="breed">Breed:</label>
+                        <input type="text" id="breed" name="breed" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="age">Age:</label>
+                        <input type="text" id="age" name="age" required>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Owner Details</legend>
+
+                    <div class="form-group">
+                        <label for="owner-name">Your Name:</label>
+                        <input type="text" id="owner-name" name="owner-name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="notes">Special Notes:</label>
+                        <textarea id="notes" name="notes" rows="4"></textarea>
+                    </div>
+                </fieldset>
+
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary">Back</button>
+                    <button type="submit" class="btn btn-primary">Submit Booking</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="staff-roster" aria-labelledby="roster-heading">
+            <h2 id="roster-heading">Staff Roster</h2>
+            <div class="table-wrapper">
+                <table>
+                    <caption>Weekly Staff Availability</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Day</th>
+                            <th scope="col">Hours</th>
+                            <th scope="col">Staff</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>9am – 5pm</td>
+                            <td>Sarah &amp; Tom</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>9am – 5pm</td>
+                            <td>Sarah &amp; Emma</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>9am – 5pm</td>
+                            <td>Tom &amp; Emma</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>9am – 5pm</td>
+                            <td>Sarah &amp; Emma</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>9am – 5pm</td>
+                            <td>Sarah &amp; Tom</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>9am – 5pm</td>
+                            <td>Tom &amp; James</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>Closed</td>
+                            <td>—</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="cancellation-policy" aria-labelledby="policy-heading">
+            <h2 id="policy-heading">Cancellation Policy</h2>
+            <ul>
+                <li>Cancellations made 48+ hours before appointment: <strong>No charge.</strong></li>
+                <li>Cancellations made 24–48 hours before appointment: <strong>25% of service fee.</strong></li>
+                <li>Cancellations made less than 24 hours before appointment: <strong>50% of service fee.</strong></li>
+                <li>No-shows or same-day cancellations: <strong>Full service fee charged.</strong></li>
+                <li>Late arrivals (more than 15 minutes): <strong>May be rescheduled and charged 25% fee.</strong></li>
+            </ul>
+            <p>Please contact us at <a href="tel:071234567">07-123-4567</a> to cancel or reschedule.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p><strong>Snazzy Paws Grooming</strong></p>
+        <p>Opening Hours: Monday – Saturday, 9:00 AM – 5:00 PM</p>
+        <p>&copy; 2026 Snazzy Paws Grooming. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
